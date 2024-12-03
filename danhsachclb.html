@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Danh sách clb</title>
+    <style>
+      /* Định dạng cơ bản */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      /* Thanh menu */
+      nav {
+        background-color: #333;
+        overflow: hidden;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+
+      nav a {
+        float: left;
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      nav a:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      /* Nội dung chính */
+      .content {
+        background-color: #45a049;
+        padding: 40px;
+        text-align: center;
+      }
+
+      #home {
+        background-image:url(anhlop.jpg);
+
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 80px 20px;
+        
+      }
+
+      #home h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        animation: fadeIn 2s ease-in-out;
+        font-family: "Verdana", sans-serif;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+      }
+
+      /* Danh mục ẩn/hiện */
+      .category-container {
+        max-width: 300px;
+        margin: 20px auto;
+        text-align: left;
+      }
+
+      .category-toggle {
+        background-color: #4caf50;
+        color: white;
+        padding: 10px 20px;
+        cursor: pointer;
+        text-align: center;
+        border: none;
+        border-radius: 4px;
+        width: 100%;
+        font-size: 1rem;
+        transition: background-color 0.3s ease;
+      }
+
+      .category-toggle:hover {
+        background-color: #45a049;
+      }
+
+      .category-list {
+        margin-top: 10px;
+        display: none;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+        padding: 10px;
+      }
+
+      .category-list a {
+        display: block;
+        color: #333;
+        padding: 8px 10px;
+        text-decoration: none;
+        border-bottom: 1px solid #ddd;
+        transition: background-color 0.3s ease;
+      }
+
+      .category-list a:last-child {
+        border-bottom: none;
+      }
+
+      .category-list a:hover {
+        background-color: #4caf50;
+        color: white;
+      }
+
+      /* Hiệu ứng động */
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      /* Footer */
+      footer {
+        background: #333;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+      }
+
+      footer a {
+        color: #4caf50;
+        text-decoration: none;
+        transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+        color: white;
+      }
+      
+        caption {
+          color: red;
+          font-size: 200%;
+          font-weight: bold;
+          border: 4px solid green;
+          padding: 2px;
+          margin: 10px;
+        }
+    .navbar {
+      background-color: orangered;
+      padding-left: 35%;
+    }
+    </style>
+  </head>
+  <body>
+    <!-- Thanh menu -->
+    <nav class="navbar">
+      <a href="index.html">Trang Chủ</a>
+      <a href="gioithieu.html">Giới Thiệu</a>
+      <a href="dichvu.html">Dịch Vụ</a>
+      <a href="lienhe.html">Liên Hệ</a>
+    </nav>
+
+    <!-- Trang chủ -->
+    <div class="content" id="home">
+      <h1 style="color : red;"><i>Báo cáo học tập!</i></h1>
+      <p style="padding-top: 200px;color : black;font-weight: 800;">
+        Học tập là hạt giống của kiến thức, kiến thức là hạt giống của hạnh phúc
+      </p>
+      <!-- <a href="#services" class="btn">Tìm Hiểu Thêm</a> -->
+    </div>
+
+    <!-- Danh mục ẩn/hiện -->
+    <div class="category-container">
+      <button class="category-toggle" onclick="toggleCategory()">
+        Hiển Thị Danh Mục
+      </button>
+      <div class="category-list" id="categoryList">
+        <a href="cadao.html" target="blank">Ca dao</a>
+        <a href="bangmaucss.html" target="blank">Bảng màu css</a>
+        <a href="chiadetri.html" target="blank">Chia để trị</a>
+        <a href="clb.html" target="blank">Clb</a>
+        <a href="danhsachclb.html" target="blank">Danh sách clb</a>
+        <a href="diemthi.html" target="blank">Điểm thi</a>
+        <a href="dkmonthi.html" target="blank">Điều kiện môn thi</a>
+        <a href="dsmonhoc.html" target="blank">Danh sách môn học</a>
+        <a href="giaibong.html" target="blank">Giải bóng</a>
+        <a href="gioithieuhdngoaikhoa.html" target="blank">Giới thiệu hoạt động ngoại khóa</a>
+        <a href="lscss" target="blank">Lịch sử css</a>
+        <a href="modau.html" target="blank">Mở đầu</a>
+        <a href="monhoc.html" target="blank">Môn học</a>
+        <a href="phuongtrinh.html" target="blank">Phương trình</a>
+        <a href="thucdon.html" target="blank">Thực đơn</a>
+        <a href="tinhoc.html" target="blank">Tin học</a>
+        <a href="ttmonan.html" target="blank">Thông tin món ăn</a>
+
+      </div>
+    </div>
+	<div style="margin-left:440px;"> <h1>Danh sách câu lạc bộ thể thao</h1> <ul style="list-style-type:circle"> <li> THỂ THAO </li> <ol type="1"> <li> Bóng đá</li> <li> Bóng chuyền</li> <li> Bóng rổ</li> <li> Võ</li> <ol type="a"> <li> Karatedo</li> <li> Taekwondo</li> <li> Vovinam</li> </ol> <li> Bơi</li> </ol> <li> NGHỆ THUẬT </li> <ol type="1"> <li> Mĩ thuật</li> <li> Nhiếp ảnh</li> <li> Âm nhạc</li> <ol type="a"> <li> Thanh nhạc</li> <li> Piano</li> <li> Violin</li> </ol> <li> Khiêu vũ</li> </ol> </div>
+    <script>
+      function toggleCategory() {
+        const categoryList = document.getElementById("categoryList");
+        if (categoryList.style.display === "block") {
+          categoryList.style.display = "none";
+        } else {
+          categoryList.style.display = "block";
+        }
+      }
+    </script>
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Công Ty Thịnhpro.</p>
+      <p>
+        Liên hệ:
+        <a href="https://mail.google.com/mail/u/0/#inbox"
+          >thinhpro12012007@gmail.com</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>
+</html>

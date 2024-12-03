@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liên Hệ Với Chúng Tôi</title>
+    <style>
+      /* Cơ bản */
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      /* Header */
+      header {
+        background: #0073e6;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+
+      /* Form liên hệ */
+      main {
+        max-width: 800px;
+        margin: 40px auto;
+        padding: 20px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      main h2 {
+        text-align: center;
+        color: #0073e6;
+        margin-bottom: 20px;
+      }
+
+      form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+      }
+
+      label {
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+
+      input,
+      textarea,
+      button {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+
+      input:focus,
+      textarea:focus {
+        border-color: #0073e6;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0, 115, 230, 0.5);
+      }
+
+      button {
+        background: #0073e6;
+        color: white;
+        font-weight: bold;
+        border: none;
+        cursor: pointer;
+        transition: background 0.3s ease;
+      }
+
+      button:hover {
+        background: #005bb5;
+      }
+
+      /* Thông tin liên hệ */
+      .contact-info {
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1rem;
+        color: #555;
+      }
+
+      .contact-info p {
+        margin: 5px 0;
+      }
+
+      .contact-info a {
+        color: #0073e6;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .contact-info a:hover {
+        text-decoration: underline;
+      }
+
+      /* Footer */
+      footer {
+        text-align: center;
+        padding: 15px 0;
+        background: #333;
+        color: white;
+        margin-top: 20px;
+      }
+
+      footer p {
+        margin: 0;
+        font-size: 0.9rem;
+      }
+
+      /* Responsive */
+      @media (max-width: 600px) {
+        main {
+          padding: 15px;
+        }
+
+        header h1 {
+          font-size: 2rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <header>
+      <h1>Liên Hệ Với Chúng Tôi</h1>
+    </header> -->
+    <main>
+      <h2>Gửi Lời Nhắn</h2>
+      <form>
+        <label for="name">Họ và Tên:</label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Nhập họ và tên của bạn"
+          required
+        />
+
+        <label for="email">Email:</label>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          placeholder="Nhập địa chỉ email"
+          required
+        />
+
+        <label for="subject">Tiêu Đề:</label>
+        <input
+          type="text"
+          id="subject"
+          name="subject"
+          placeholder="Nhập tiêu đề"
+          required
+        />
+
+        <label for="message">Nội Dung:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          placeholder="Nhập nội dung lời nhắn"
+          required
+        ></textarea>
+
+        <button type="submit">Gửi</button>
+      </form>
+      <div class="contact-info">
+        <p>Hoặc liên hệ qua:</p>
+        <p>Điện thoại: <a href="tel:+84901234567">+84 901 234 567</a></p>
+        <p>
+          Email:
+          <a href="https://mail.google.com/mail/u/0/#inbox"
+            >thinhpro12012007.com</a
+          >
+        </p>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2024 Liên Hệ Với Chúng Tôi. Mọi quyền được bảo lưu.</p>
+    </footer>
+  </body>
+</html>
